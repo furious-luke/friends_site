@@ -1,0 +1,80 @@
+{% extends "_base.html" %}
+
+{% block title %}Sykes and Hodkinson Friendship Meter{% endblock %}
+
+{% block css %}
+<link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+{% endblock %}
+
+{% block js %}
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}js/friends.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="hero-unit">
+    <h2>Sykes and Hodkinson Friendship Meter</h2>
+    <p>Real-time representation of the magnitude of Jess and Luke's friendship.</p>
+  </div>
+  <div class="row">
+    <div class="span12">
+      <div class="meter progress progress-striped active" style="height: 40px;">
+        <div class="bar bar-info" style="width: 55%;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12" style="text-align: center;">
+      <h1>
+    <div class="d0" style="display: none;">
+      Mortal Enemies
+    </div>
+    <div class="d1" style="display: none;">
+      Nemesis
+    </div>
+    <div class="d2" style="display: none;">
+      Punch on
+    </div>
+    <div class="d3" style="display: none;">
+      Dirty looks
+    </div>
+    <div class="d4" style="display: none;">
+      Mediocre
+    </div>
+    <div class="d5" style="display: none">
+      Okay
+    </div>
+    <div class="d6">
+      Hang out
+    </div>
+    <div class="d7" style="display: none;">
+      Good buds
+    </div>
+    <div class="d8" style="display: none;">
+      High five
+    </div>
+    <div class="d9" style="display: none;">
+      Super friends
+    </div>
+    <div class="d10" style="display: none;">
+      BFF
+    </div>
+    <div class="d11" style="display: none;">
+      Sky rockets in flight
+    </div>
+    <div class="d12" style="display: none;">
+      HOLY CRAP! FRIENDS!
+    </div>
+    </h1>
+    </div>
+  </div>
+</div>
+{% endblock %}
